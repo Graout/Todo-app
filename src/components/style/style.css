@@ -1,0 +1,59 @@
+.home-wrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    height: 100vh;
+}
+
+.home-wrapper h1 {
+    text-align: center;
+    background-color: gray;
+}
+
+.home-wrapper div {
+    margin: 10px;
+    margin-bottom: 50px;
+    border: gray solid 1px;
+}
+
+.drop-target {
+    background-color: #111;
+    border-color: #fff;
+    border-style: solid;
+}
+
+.drag-drop.can-drop-todos {
+    color: #000;
+    background-color: gray;
+}
+
+.drag-drop.can-drop-in-progress {
+    color: #000;
+    background-color: rgb(227, 238, 68);
+}
+
+.drag-drop.can-drop-code-review {
+    color: #000;
+    background-color: rgb(68, 238, 238);
+}
+.drag-drop.can-drop-completed {
+    color: #000;
+    background-color: rgb(88, 238, 68);
+}
+
+.drag-drop {
+    display: inline-block;
+    min-width: 40px;
+    padding: 2em 0.5em;
+    position: absolute;
+    color: #fff;
+    background-color: #29e;
+    border: solid 2px #fff;
+
+    touch-action: none;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+
+    transition: background-color 0.3s;
+}
